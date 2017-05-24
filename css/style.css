@@ -1,0 +1,718 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {font-family: 'MuseoSansRounded-900';
+        src: url('../fonts/webfonts/337D35_0_0.eot');
+        src: url('../fonts/webfonts/337D35_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfonts/337D35_0_0.woff2') format('woff2'),
+        url('../fonts/webfonts/337D35_0_0.woff') format('woff'),
+        url('../fonts/webfonts/337D35_0_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {font-family: 'MuseoSansRounded-100';
+        src: url('../fonts/webfonts/337D35_1_0.eot');
+        src: url('../fonts/webfonts/337D35_1_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfonts/337D35_1_0.woff2') format('woff2'),
+        url('../fonts/webfonts/337D35_1_0.woff') format('woff'),
+        url('../fonts/webfonts/337D35_1_0.ttf') format('truetype');
+}
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+body {
+}
+
+.bg {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding-top:45%;
+    transition: margin 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+}
+ 
+.bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+    object-fit: cover;
+}
+
+.overlay-logo {
+    position: absolute;
+    top:26px;
+    left:48.9583333333%;
+    -webkit-transition-duration: 0.3s; 
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+ 
+.logo_Garage_white {
+  width: 69px;
+  height: 31px;
+  object-fit: contain;
+}
+
+/*----кусочек правого меню----*/
+.right{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 38%;
+    height: 100%;
+    z-index: 4;
+
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+
+ /*-----лувое меню-----*/
+.overlay-left {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 35%;
+    height: 100%;
+
+    -webkit-transition-duration: 0.3s; 
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+}
+
+    .overlay-left h1 {
+        text-align:left;
+        font-family: 'MuseoSansRounded', Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding-top:50%;
+        padding-left:24px;
+    } 
+
+.hidden_panel {
+    position: fixed; 
+    top: 0; 
+    left: -23.53%; 
+    background: black; 
+    color: #fff; 
+    width: 23.53%; 
+    height: 100vh; 
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+    -webkit-transition-duration: 0.3s; 
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    }
+
+
+
+      .overlay-left:hover {
+          left: 23.535%; 
+      }
+
+      .overlay-left:hover .hidden_panel {
+          left: 0;
+      }   
+/*-----Панель с продуктом компании------*/
+  .produse li {
+   display: block;
+   float:left;
+   width: 100%;
+   height: 180px;
+   position: relative;
+   }
+
+       .produse li p {
+        position: relative;
+        top: 30%;
+        left: 28.1818181818%;
+        font-family: 'MuseoSansRounded', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 1.9px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+         .produse li p span {
+          font-family: 'PlayfairDisplay', Arial, sans-serif;
+          font-size: 10px;
+          font-weight: bold;
+          font-style: italic;
+          color: #ffffff;
+          text-transform: lowercase;
+         }
+
+      .produse li h3 {
+        position: relative;
+        top: 24%;
+        left: 28.1818181818%;
+        font-family: 'MuseoSansRounded', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.35;
+        letter-spacing: 0.6px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+ 
+     .produse .overlay-logo_1 {
+       position: absolute;
+       top:0;
+       left: -300px;
+       width: 210%;
+       height: auto;
+     
+       -webkit-transition-duration: 0.3s; 
+       -moz-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
+       } 
+
+       .screen-shot {
+          width: 320px;
+          height: 180px;
+          object-fit: contain;
+        }
+
+      .hidden_screen-shot {
+          position: fixed; 
+          top: 0; 
+          right: 100%; 
+          width: 100%; 
+          height: auto;
+
+          -webkit-transition-duration: 0.3s; 
+          -moz-transition-duration: 0.3s;
+          -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+      }
+
+            .overlay-logo_1:hover {
+                left: -20%; 
+            }
+
+            .overlay-logo_1:hover .hidden_screen_shot {
+                left: 0; 
+            }   
+
+ .btn {
+  width: 160px;
+  height: 60px;
+  border-radius: 1px;
+  background-color: #f8574a;
+  position: fixed;
+  bottom: 7%;
+  left: -20%;
+
+  font-family: 'MuseoSansRounded',Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+}
+
+
+      .overlay-left:hover .btn {
+          left: 5%;
+      }   
+
+
+/*-----Правое меню-----*/
+.overlay-right {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 38%;
+    height: 100%;
+
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.overlay-right h1 {
+    text-align: right;
+    float: right;
+    font-family: 'MuseoSansRounded', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top:47%;
+    padding-right:19px;
+    white-space: nowrap;
+}
+
+.hidden_panel_1 {
+    position: fixed;
+    top: 0; 
+    right: -20%; 
+    background: black; 
+    color: #fff; 
+    width: 20%; 
+    height: 100vh; 
+    padding: 5px; 
+    text-align: right; 
+
+    -webkit-transition-duration: 0.3s; 
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 5px 5px 0; 
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+
+      .right:hover {
+          right: 20%; 
+      }
+
+      .right:hover .hidden_panel_1 {
+          right: 0; 
+      } 
+
+      .right:hover ~ .overlay-right {
+          right: 20%;
+      }     
+
+
+.right:hover ~ .overlay-left {left:-550px;}
+.overlay-left:hover ~ .overlay-right {right:-550px;}
+
+
+
+
+/*-------центральный обьект(кружок)-----*/
+.oval {
+  width: 144px;
+  height: 144px;
+  border: solid 1px #ffffff;
+  position: absolute;
+  left: 44.4444444444%;
+  top: 42%;
+  border-radius:100px;
+
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+    .oval_1 {
+      width: 60px;
+      height: 60px;
+      opacity: 1;
+      border: solid 2px #ffffff;
+      position: relative;
+      top:42px;
+      left: 42px;
+      border-radius: 100px;
+      z-index: 3;
+    } 
+
+      .iccon_arroy_left {
+        float: left;
+        margin-top: 22px;
+        margin-left:13px;
+        width: 10px;
+        height: 14px;
+        background: url("../img/icon-arrow-right_2017-05-14/icon-arrow-right.png") center no-repeat;
+      }
+
+      .iccon_arroy_right{
+        float: left;
+        margin-top: 22px;
+        margin-left:10px;
+        width: 10px;
+        height: 14px;
+        background: url("../img/icon-arrow-left_2017-05-15/icon-arrow-left.png") center no-repeat;
+      }
+
+
+.right:hover ~ .oval {left:6.94444444444%;}
+.overlay-left:hover ~ .oval {left:83.0555555556%;}
+     
+/*-------О компании------*/
+.panel-company{
+    background: #39464e;
+    position: absolute;
+    bottom: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: bottom 500ms cubic-bezier(0.17,0.04,0.03,0.94);
+    z-index: 9998
+
+}
+
+  label.btnr {
+    display: block;
+    position: absolute;
+    bottom:4.66666666667%;
+    left: 48.0555555556%;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.17,0.04,0.03,0.94);
+    z-index: 9999
+
+      
+}
+
+label h6{
+  font-family: 'MuseoSansRounded', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+label.btnr:hover {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    }
+.open:checked ~ .panel-company {
+    bottom: 0;
+}
+.open:checked ~ label.btnr {
+    bottom: 90vh;
+}
+
+.open:checked ~ .bg {
+    margin-bottom: 100vh;
+}
+
+.overlay-left:hover ~ .btnr {bottom:-200px;}
+.right:hover ~ .btnr {bottom:-200px;}
+
+/*============    	АДАПТИВ    ===========*/
+@media(min-width:993px) and (max-width:1200px) {
+   .overlay-left h1 {
+    font-size: 40px;
+   }
+
+  .overlay-right h1{
+    font-size: 40px;
+  }
+
+  .oval {
+   width: 130px;
+   height: 130px;
+  left: 42%;
+  top:33%;
+  }
+
+  .oval_1 {
+      top: 35px;
+      left: 35px;
+  }
+
+  .hidden_panel {
+    left: -30%;
+    width: 30%;
+  }
+
+  .overlay-left:hover {
+    left: 30%; 
+      }
+
+  .hidden_panel_1 {
+    right: -30%;
+    width: 30%;
+  }
+
+  .right:hover {
+    right: 30%; 
+      }
+
+  .right:hover ~ .overlay-right{
+    right: 30%; 
+      }
+
+ .produse li p {
+   top: 26%;
+   left: 23%;
+ }
+  .produse li h3 {
+        top: 20%;
+        left: 23%;    
+}
+
+  .overlay-logo_1:hover {
+                left: -20%; 
+    }
+}
+
+@media(min-width:769px) and (max-width:992px) {
+  .overlay-logo {
+    left:44%;
+}
+
+  .overlay-left h1 {
+    font-size: 30px;
+    padding-top: 50vh;
+   }
+    .overlay-right h1{
+    font-size: 30px;
+    padding-top: 50vh;
+  }
+
+  .oval {
+   width: 110px;
+   height: 110px;
+  left: 40%;
+  top:50%;
+  }
+
+  .oval_1 {
+      top: 25px;
+      left: 25px;
+  }
+
+  .hidden_panel {
+    left: -33.7%;
+    width: 33.7%;
+  }
+
+  .overlay-left:hover {
+    left: 33.7%; 
+      }
+
+  .hidden_panel_1 {
+    right: -33.7%;
+    width: 33.7%;
+  }
+
+  .right:hover {
+    right: 33.7%; 
+      }
+
+  .right:hover ~ .overlay-right{
+    right: 33.7%; 
+      }
+.produse li p {
+   top: 26%;
+   left: 18%;
+ }
+  .produse li h3 {
+        top: 20%;
+        left: 18%;  
+        font-size: 17px;  
+}
+
+
+ .btn {
+  bottom: 4%;
+  left: -25%;
+}
+
+  .overlay-left:hover .btn {
+          left: 5%;
+      }   
+
+  .overlay-logo_1:hover {
+                left: -20%; 
+    }
+
+    label.btnr {
+        left: 44%;    
+    }
+}
+
+
+@media(min-width:481px) and (max-width:768px) {
+  .overlay-left h1 {
+    font-size: 15px;
+    padding-top: 50vh;
+    padding-left: 4px;
+   }
+    .overlay-right h1{
+    font-size: 15px;
+    padding-top: 50vh;
+    padding-right: 4px ;
+  }
+  .oval {
+    border: none;
+    left: 36%;
+    top:46vh;
+  }
+
+  .oval_1 {
+      width: 40px;
+      height: 40px;
+      border: solid 2px #ffffff;
+    } 
+
+      .iccon_arroy_left {
+        margin-top: 11px;
+        margin-left:4px;
+        }
+
+      .iccon_arroy_right{
+        margin-top: 11px;
+        margin-left:8px;
+      }
+
+  .right:hover ~ .oval {left:5px;}
+.overlay-left:hover ~ .oval {left:79%;}
+
+ .hidden_panel {
+    left: -42%;
+    width: 42%;
+  }
+
+  .overlay-left:hover {
+    left: 42%; 
+      }
+
+  .hidden_panel_1 {
+    right: -42%;
+    width: 42%;
+  }
+
+  .right:hover {
+    right: 42%; 
+      }
+
+  .right:hover ~ .overlay-right{
+    right: 42%; 
+      }
+.produse li p {
+   top: 26%;
+   left: 36%;
+   font-size: 10px;
+ }
+  .produse li h3 {
+        top: 20%;
+        left: 36%;  
+        font-size: 14px;  
+}
+
+.btn {
+  bottom: 4%;
+  left: -35%;
+}
+
+  .overlay-left:hover .btn {
+          left: 3%;
+      }   
+
+  .overlay-logo_1:hover {
+                left: -15%; 
+    }
+
+
+label.btnr {
+    left: 44%;    
+}
+.right:hover ~ .overlay-logo {left:50px;}
+.overlay-left:hover ~ .overlay-logo {left:500px;}
+}
+
+@media(min-width:321px) and (max-width:480px) {
+  .overlay-left h1 {
+    font-size: 12px;
+    padding-top: 50vh;
+    padding-left: 4px;
+   }
+    .overlay-right h1{
+    font-size: 12px;
+    padding-top: 50vh;
+    padding-right: 4px ;
+  }
+  .oval {
+    display: none;
+  }
+
+
+ .hidden_panel {
+    left: -50%;
+    width: 50%;
+  }
+
+  .overlay-left:hover {
+    left: 50%; 
+      }
+
+  .hidden_panel_1 {
+    right: -50%;
+    width: 50%;
+  }
+
+  .right:hover {
+    right: 50%; 
+      }
+
+  .right:hover ~ .overlay-right{
+    right: 50%; 
+      }
+
+.produse li p {
+   top: 26%;
+   left: 4%;
+   font-size: 8px;
+ }
+  .produse li h3 {
+        top: 20%;
+        left: 4%;  
+        font-size: 14px;  
+}
+
+
+ .btn {
+  bottom: 4%;
+  left: -60%;
+  width: 120px;
+  height: 50px;
+  font-size: 8px;
+}
+
+  .overlay-left:hover .btn {
+          left: 5%;
+      }   
+
+  .overlay-logo_1:hover {
+                left: -20%; 
+    }
+
+label.btnr {
+    left: 44%;    
+}
+.right:hover ~ .overlay-logo {left:-550px;}
+.overlay-left:hover ~ .overlay-logo {left:550px;}
+}
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+
+
+
+
+
